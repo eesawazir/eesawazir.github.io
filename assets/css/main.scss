@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-    --primary-colour: #5050ff
+    --primary-colour: #5050ff;
+    --button-colour: #5050ff;
+    --button-colour-dark: #3939b8;
 }
 
 body {
+    overflow-x: hidden;
     font-family: "Montserrat";
-    background: #e8e7e7;
+    background: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -26,6 +29,7 @@ header {
     z-index: 10;
     top: 0;
     left: 0;
+    box-shadow: 0px 1px 10px grey;
 
     .logo {
         text-decoration: none;
@@ -69,29 +73,42 @@ section {
     text-align: center;
     margin-top: 4em;
 
+    img {
+        border-radius: 50%;
+        max-width: 200px;
+        width: 40%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .hero-info {
 
         h1 {
             font-weight: bold;
             letter-spacing: .1em;
-            margin-bottom: 1.3em;
+            margin-bottom: 0.5em;
         }
 
         h3 {
             font-weight: normal;
-            margin-bottom: 3.5em;
+            margin-bottom: 2.5em;
         }
     }
 
     .hero-cta {
-        background-color: var(--primary-colour);
+        background-color: var(--button-colour);
         color: white;
         text-decoration: none;
         padding: 0.75em 1em;
         font-size: 1.2em;
         border-radius: 3em;
         font-weight: bold;
-        margin-top: 1.5em;
+    }
+
+    .hero-cta:hover {
+        background-color: var(--button-colour-dark);
     }
 }
 
@@ -121,10 +138,15 @@ section {
         justify-content: center;
 
         .about-skill {
-            background-color: #959595;
+            background-color: #9b9b9b;
             color: white;
             padding: 0.25em;
             margin: 0.3em;
+            border-radius: 10px;
+        }
+
+        .about-skill:hover {
+            background-color: #707070;
         }
     }
 }
@@ -146,13 +168,17 @@ section {
         }
 
         .project-link {
-            background-color: var(--primary-colour);
+            background-color: var(--button-colour);
             color: white;
             text-decoration: none;
             padding: 0.5em 1em;
             font-size: 1em;
             border-radius: 3em;
             font-weight: bold;
+        }
+
+        .project-link:hover {
+            background-color: var(--button-colour-dark);
         }
 
         .project-image {
@@ -182,7 +208,6 @@ footer {
         }
 
         .footer-info {
-
             text-align: center;
         }
     }
@@ -261,7 +286,7 @@ nav.menu-button {
             height: auto;
             width: auto;
             padding: 0 1em;
-            
+
             .hero-nav-list {
                 display: flex;
                 align-items: center;
@@ -271,7 +296,7 @@ nav.menu-button {
                 li {
                     padding: 0;
                 }
-        
+
                 a {
                     color: black;
                     font-size: 1.3em;
@@ -312,12 +337,12 @@ nav.menu-button {
     .about-skill {
         font-size: 1.5em;
     }
-    
+
     .project {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
+
         .project-text {
             padding-right: 2em;
         }
