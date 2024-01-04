@@ -112,20 +112,40 @@ section {
   text-align: center;
   margin-bottom: 1.3em;
 }
-#about .about-skill-list {
+#about .skills h3 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+#about .skills .skills-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#about .skills .skills-list .skills-list__category {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin: 0.5em 0;
 }
-#about .about-skill-list .about-skill {
-  background-color: #9b9b9b;
-  color: white;
-  padding: 0.25em;
-  margin: 0.3em;
-  border-radius: 10px;
+#about .skills .skills-list .skills-list__category .skills-category-name {
+  margin-right: 1em;
 }
-#about .about-skill-list .about-skill:hover {
-  background-color: #707070;
+#about .skills .skills-list .skills-list__category .skills-icons {
+  display: flex;
+}
+#about .skills .skills-list .skills-list__category .skills-icons .skill {
+  margin: 0.5em;
+}
+#about .skills .skills-list .skills-list__category .skills-icons .skill img {
+  max-width: 100%;
+  display: block;
+}
+@media only screen and (max-width: 550px) {
+  #about .skills .skills-list .skills-list__category {
+    flex-direction: column;
+  }
 }
 
 #projects h2 {

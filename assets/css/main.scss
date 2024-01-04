@@ -132,21 +132,48 @@ section {
         }
     }
 
-    .about-skill-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    .skills {
 
-        .about-skill {
-            background-color: #9b9b9b;
-            color: white;
-            padding: 0.25em;
-            margin: 0.3em;
-            border-radius: 10px;
+        h3 {
+            text-align: center;
+            margin-bottom: 1em;
         }
 
-        .about-skill:hover {
-            background-color: #707070;
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+
+            .skills-list__category {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0.5em 0;
+
+                .skills-category-name {
+                    margin-right: 1em;
+                }
+
+                .skills-icons {
+                    display: flex;
+
+                    .skill {
+                        margin: 0.5em;
+
+                        img {
+                            max-width: 100%;
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 550px) {
+                .skills-list__category {
+                    flex-direction: column;
+                }
+            }
         }
     }
 }
