@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 :root {
     --primary-colour: #5050ff;
@@ -84,10 +84,9 @@ section {
     }
 
     .hero-info {
-
         h1 {
             font-weight: bold;
-            letter-spacing: .1em;
+            letter-spacing: 0.1em;
             margin-bottom: 0.5em;
         }
 
@@ -113,11 +112,10 @@ section {
 }
 
 #about {
-
     h2 {
         text-align: center;
         font-weight: bold;
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
         margin-bottom: 1.5em;
     }
 
@@ -133,7 +131,6 @@ section {
     }
 
     .skills {
-
         h3 {
             text-align: center;
             margin-bottom: 1em;
@@ -179,11 +176,10 @@ section {
 }
 
 #projects {
-
     h2 {
         text-align: center;
         font-weight: bold;
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
         margin-bottom: 1.5em;
     }
 
@@ -283,7 +279,7 @@ nav.menu-button {
                 color: white;
                 text-decoration: none;
                 display: block;
-                padding: .25em;
+                padding: 0.25em;
                 font-size: 1.3em;
                 text-align: center;
 
@@ -297,7 +293,6 @@ nav.menu-button {
 }
 
 @media only screen and (min-width: 500px) {
-
     .menu-open,
     .menu-exit {
         display: none;
@@ -380,7 +375,6 @@ nav.menu-button {
             margin-top: 0;
         }
     }
-
 }
 
 @media only screen and (min-width: 900px) {
@@ -406,7 +400,6 @@ nav.menu-button {
 
     footer {
         width: 100vw;
-
     }
 }
 
@@ -427,7 +420,6 @@ nav.menu-button {
 }
 
 @media only screen and (min-width: 1350px) {
-
     .main-container {
         max-width: 1100px;
     }
