@@ -25,6 +25,7 @@ header {
   justify-content: space-between;
   position: fixed;
   width: 100%;
+  box-sizing: border-box;
   z-index: 10;
   top: 0;
   left: 0;
@@ -66,7 +67,9 @@ section {
 
 #hero {
   text-align: center;
-  margin-top: 4em;
+  margin-top: 5.25em;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 #hero img {
   border-radius: 50%;
@@ -84,9 +87,14 @@ section {
 }
 #hero .hero-info h3 {
   font-weight: normal;
-  margin-bottom: 2.5em;
+  color: #444;
+  line-height: 1.5;
+  max-width: 32em;
+  margin: 0 auto 2.5em;
+  text-wrap: balance;
 }
 #hero .hero-cta {
+  display: inline-block;
   background-color: var(--button-colour);
   color: white;
   text-decoration: none;
@@ -99,21 +107,38 @@ section {
   background-color: var(--button-colour-dark);
 }
 
+#about {
+  margin-top: 5.5em;
+}
 #about h2 {
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.1em;
+  margin-top: 0;
   margin-bottom: 1.5em;
 }
 #about p {
   margin-bottom: 2.5em;
 }
+#about .about-info {
+  max-width: 42em;
+  margin: 0 auto;
+}
+#about .about-info p {
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
 #about .about-skills h3 {
   text-align: center;
   margin-bottom: 1.3em;
 }
+#about .skills {
+  margin-top: 7.5em;
+}
 #about .skills h3 {
   text-align: center;
+  margin-top: 0;
   margin-bottom: 1em;
 }
 #about .skills .skills-list {
@@ -152,10 +177,14 @@ section {
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.1em;
+  margin-top: 0;
   margin-bottom: 1.5em;
 }
 #projects .project {
   margin-bottom: 3.5em;
+}
+#projects .project:last-child {
+  margin-bottom: 2.5em;
 }
 #projects .project .project-info {
   margin-bottom: 1.5em;
@@ -189,25 +218,28 @@ footer {
   justify-content: space-between;
   margin-top: 2em;
   width: 100%;
-}
-footer .footer-left {
-  padding: 0em 1em;
-}
-footer .footer-left .footer-title {
-  text-align: center;
-}
-footer .footer-left .footer-info {
-  text-align: center;
+  padding: 2em 0;
 }
 footer .footer-right {
-  padding-bottom: 1em;
   text-align: center;
-  margin-bottom: 1em;
+}
+footer .footer-right .footer-info {
+  font-size: 1em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0 0 1em;
 }
 footer .footer-right .socials-list {
   display: flex;
   justify-content: center;
   gap: 2em;
+}
+footer .footer-right .socials-list a {
+  opacity: 0.75;
+  transition: opacity 0.2s;
+}
+footer .footer-right .socials-list a:hover {
+  opacity: 1;
 }
 
 nav.menu-button {
@@ -300,6 +332,9 @@ nav.menu-button {
   p {
     font-size: 1.25em;
   }
+  #hero .hero-info h3 {
+    font-size: 1.4em;
+  }
   .about-skill {
     font-size: 1.5em;
   }
@@ -332,9 +367,6 @@ nav.menu-button {
   }
   header .hero-nav {
     margin-right: 2em;
-  }
-  footer {
-    width: 100vw;
   }
 }
 @media only screen and (min-width: 1150px) {
